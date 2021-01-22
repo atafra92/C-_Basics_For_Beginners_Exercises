@@ -1,1 +1,3 @@
-# C-_Basics_For_Beginners_Exercises
+# CSharp Basics For Beginners - Exercises
+
+Exercices from Udemy course C# Basics for Beginnners Learn C# Fundamentals by Coding
