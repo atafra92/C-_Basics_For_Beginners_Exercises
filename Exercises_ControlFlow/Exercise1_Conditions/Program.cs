@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace Exercise1_ControlFlow
+namespace Exercise1_Conditions
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //PART 1
+
+            //Zadatak 1
             Console.Write("Please enter a number between 1 and 10: ");
             int input = int.Parse(Console.ReadLine());
 
@@ -19,7 +20,7 @@ namespace Exercise1_ControlFlow
                 Console.WriteLine("This is a invalid number");
             }
 
-            //PART 2
+            //Zadatak 2
             Console.WriteLine();
             Console.Write("Enter first number: ");
             int number1 = int.Parse(Console.ReadLine());
@@ -30,7 +31,7 @@ namespace Exercise1_ControlFlow
 
             Console.WriteLine($"Max number is { result }");
 
-            //PART 3
+            //Zadatak 3
             Console.WriteLine();
             Console.Write("Enter the width of a image: ");
             int width = int.Parse(Console.ReadLine());

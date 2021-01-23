@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1_ControlFlow", "Exercise1_ControlFlow\Exercise1_ControlFlow.csproj", "{3EC2C634-9C86-43C6-AB24-CD608D536F3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1_Conditions", "Exercise1_Conditions\Exercise1_Conditions.csproj", "{3EC2C634-9C86-43C6-AB24-CD608D536F3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2_ControlFlow", "Exercise2_ControlFlow\Exercise2_ControlFlow.csproj", "{0DD1C586-866F-4014-8028-118CAD3456F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2_Loops", "Exercise2_Loops\Exercise2_Loops.csproj", "{0DD1C586-866F-4014-8028-118CAD3456F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

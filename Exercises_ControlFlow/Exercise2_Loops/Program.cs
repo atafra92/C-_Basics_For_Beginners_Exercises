@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Text;
 
-namespace Exercise2_ControlFlow
+namespace Exercise2_Loops
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //1- Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder.
-            //Display the count on the console.
-
+            //Zadatak 1
             int counter = 0;
 
             for (int i = 0; i < 100; i++)
@@ -22,30 +20,27 @@ namespace Exercise2_ControlFlow
             Console.WriteLine($"{ counter } numbers in range from 1 to 100 are divisible by 3");
 
 
-            //2- Write a program and continuously ask the user to enter a number or "ok" to exit. 
-            //Calculate the sum of all the previously entered numbers and display it on the console.
-
+            //Zadatak 2
             int sum = 0;
 
             do
             {
-                Console.Write($"Please enter a number or 'ok' to exit: ");
-                string input = Console.ReadLine();
+                Console.Write($"Please enter a number or type 'ok' to exit: ");
+                string num = Console.ReadLine();
 
-                if (input.ToLower() == "ok")
+                if (num.ToLower() == "ok")
                 {
                     break;
                 }
 
-                sum += int.Parse(input);
+                sum += int.Parse(num);
 
             } while (true);
 
             Console.WriteLine($"Sum of all the numbers is: { sum }");
 
 
-            //3- Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console.
-            //For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
+            //Zadatak 3
 
             Console.Write("Enter a number: ");
             int number = int.Parse(Console.ReadLine());
@@ -57,9 +52,8 @@ namespace Exercise2_ControlFlow
             }
             Console.WriteLine($"{ number}! = { factorial }");
 
-            //4 - Write a program that picks a random number between 1 and 10.
-            //Give the user 4 chances to guess the number.If the user guesses the number, display “You won"; otherwise, display “You lost". 
-            //(To make sure the program is behaving correctly, you can display the secret number on the console first.)
+            
+            //Zadatak 4
 
             Random random = new Random();
             int guesses = 0;
@@ -84,10 +78,10 @@ namespace Exercise2_ControlFlow
                     Console.WriteLine("You lost!");
                 }
 
-            } while (outOfGuesses == false);
+            } while(outOfGuesses == false);
 
-            //5- Write a program and ask the user to enter a series of numbers separated by comma. 
-            //Find the maximum of the numbers and display it on the console. For example, if the user enters “5, 3, 8, 1, 4", the program should display 8.
+           
+            //Zadatak 5
 
             Console.Write("Enter a series of numbers separated by comma: ");
             string input = Console.ReadLine();
@@ -96,12 +90,12 @@ namespace Exercise2_ControlFlow
 
             var max = int.Parse(numbers[0]);
 
-            foreach (var num in numbers)
+            foreach (var n in numbers)
             {
-                var number = int.Parse(num);
-                if (number > max)
+                var strNumber = int.Parse(n);
+                if (strNumber > max)
                 {
-                    max = number;
+                    max = strNumber;
                 }              
             }
 
